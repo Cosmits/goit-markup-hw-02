@@ -1,0 +1,186 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --title-text-color-2: #FFFFFF;
+    --accent-color: #4D5AE5;
+}
+
+/* =========== global tags style =========== */
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* =========== header =========== */
+.header-nav {
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+}
+
+.header-link-logo,
+.footer-link-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24/18);
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.header-link-logo-2 {
+    color: var(--title-text-color);
+}
+
+.header-link {
+    font-weight: 600;
+    color: var(--title-text-color);
+}
+
+.header-contact {
+    font-weight: 400;
+    color: var(--primary-text-color);
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+/* =========== hero =========== */
+.hero {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background: var(--title-text-color);
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: calc(60/56);
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color-2);
+}
+
+.hero-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(19/16);
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--title-text-color-2);
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* =========== Our skills =========== */
+.skills-title,
+.teams-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+}
+
+.skills-text,
+.teams-text,
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24/16);
+
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+/* =========== What are we doing =========== */
+.projects-pre-title,
+.teams-pre-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40/36);
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--title-text-color);
+}
+
+/* =========== Our Team =========== */
+
+
+/* =========== footer =========== */
+.footer {
+    background: var(--title-text-color);
+}
+
+.footer-link-logo-2 {
+    color: #F4F4FD;
+}
+
+.footer-text {
+    color: #E7E9FC;
+}
+
+
+/* =========== Portfolio  ===========*/
+
+.btn-portfolio {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24/16);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--accent-color);
+    background-color: #F4F4FD;
+    line-height: 1.5;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+    color: var(--title-text-color-2);
+    background-color: var(--accent-color);
+    line-height: 1.5;
+}
