@@ -3,18 +3,17 @@
     --dark-navy-blue: #2E2F42;
     --success-color: #31D0AA;
     --primary-text-color: #434455;
+    --active-text-color: #FFFFFF;
+    --default-bg-color: #FFFFFF;
     --subtle-text: #8E8F99;
     --accent-color: #E7E9FC;
     --light-mode-backgrounds: #F4F4FD;
-    --dark-navy-blue-2: #FFFFFF;
 }
 
 /* =========== global tags style =========== */
 body {
     font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    background-color: #FFFFFF;
+    background-color: var(--default-bg-color);
     color: var(--primary-text-color);
 }
 
@@ -59,8 +58,6 @@ body {
     font-size: 18px;
     line-height: calc(24/18);
 
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand-color);
@@ -76,16 +73,19 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus {
     color: var(--primary-text-color)
 }
 
-.header-link:active {
+.header-link:active,
+.header-contact:active {
     color: var(--primary-brand-color)
 }
 
 .header-contact {
-    font-weight: 400;
+    /* font-weight: 400; */
     color: var(--primary-text-color);
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -105,10 +105,12 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
 
-    color: var(--dark-navy-blue-2);
+    color: var(--active-text-color);
 }
 
 .hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: calc(19/16);
@@ -116,7 +118,7 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    color: var(--dark-navy-blue-2);
+    color: var(--active-text-color);
 
     background: var(--primary-brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -170,7 +172,13 @@ body {
 }
 
 /* =========== Our Team =========== */
+.teams {
+    background-color: var(--light-mode-backgrounds);
+}
 
+.teams-item {
+    background-color: var(--default-bg-color)
+}
 
 /* =========== footer =========== */
 .footer {
@@ -185,19 +193,14 @@ body {
     color: #E7E9FC;
 }
 
-
 /* =========== Portfolio  ===========*/
 
 .btn-portfolio {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: calc(24/16);
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
 
     color: var(--primary-brand-color);
@@ -207,7 +210,7 @@ body {
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-    color: var(--dark-navy-blue-2);
+    color: var(--active-text-color);
     background-color: var(--primary-brand-color);
     line-height: 1.5;
 }
